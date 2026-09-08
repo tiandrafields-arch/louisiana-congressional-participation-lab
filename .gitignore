@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large/raw source data: preserve locally and document in data/manifest.csv
+# Commit only reviewed, publishable derivatives and small source files.
+data/raw/**
+!data/raw/README.md
+*.zip
+*.7z
+*.tar
+*.gz
+
+# Local geospatial working files
+*.gpkg
+*.gdb/
+*.sqlite
+*.parquet
+
+# Secrets
+*.pem
+*.key
+*.p12
+
+# Generated temporary outputs
+.tmp/
+tmp/
