@@ -1,0 +1,39 @@
+{
+  "report_date": "2026-10-01",
+  "report_status": "Both",
+  "source": "Louisiana Secretary of State registered voters by party and race; district subtotal rows in October 1 parish workbook",
+  "total_registered": 2978143,
+  "black_registered": 933052,
+  "districts": [
+    {
+      "district": 1,
+      "total_registered": 515235,
+      "black_registered": 64317
+    },
+    {
+      "district": 2,
+      "total_registered": 500285,
+      "black_registered": 300574
+    },
+    {
+      "district": 3,
+      "total_registered": 495905,
+      "black_registered": 135492
+    },
+    {
+      "district": 4,
+      "total_registered": 482573,
+      "black_registered": 146048
+    },
+    {
+      "district": 5,
+      "total_registered": 484102,
+      "black_registered": 161950
+    },
+    {
+      "district": 6,
+      "total_registered": 500043,
+      "black_registered": 124671
+    }
+  ]
+}
