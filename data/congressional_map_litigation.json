@@ -1,0 +1,138 @@
+{
+  "schema_version": 1,
+  "last_verified": "2026-10-27",
+  "scope": "Selected documented milestones, not a comprehensive or automatically updated docket",
+  "sources": [
+    {
+      "id": "leg2024",
+      "title": "2024 Congress Act 2 map archive",
+      "authority": "Louisiana Legislature",
+      "url": "https://redist.legis.la.gov/2024_Files/2024CONGRESSACT2",
+      "verified_on": "2026-10-27"
+    },
+    {
+      "id": "callais2026",
+      "title": "Louisiana v. Callais, Supreme Court opinion, April 29, 2026",
+      "authority": "U.S. Supreme Court",
+      "url": "https://www.supremecourt.gov/opinions/25pdf/24-109_new_jifl.pdf?inline=1",
+      "verified_on": "2026-10-27"
+    },
+    {
+      "id": "callaisdocket",
+      "title": "Supreme Court docket 24-109",
+      "authority": "U.S. Supreme Court",
+      "url": "https://www.supremecourt.gov/docket/docketfiles/html/public/24-109.html",
+      "verified_on": "2026-10-27"
+    },
+    {
+      "id": "leg2026",
+      "title": "2026 Congress Act 2 map and geographic files",
+      "authority": "Louisiana Legislature",
+      "url": "https://redist.legis.la.gov/2026_Files/2026CONGRESSACT2",
+      "verified_on": "2026-10-27"
+    },
+    {
+      "id": "sb121",
+      "title": "2026 SB121 bill history and Act 2 status",
+      "authority": "Louisiana Legislature",
+      "url": "https://www.legis.la.gov/Legis/BillInfo.aspx?i=250004",
+      "verified_on": "2026-10-27"
+    }
+  ],
+  "maps": [
+    {
+      "id": "2024-act2",
+      "name": "2024 Act 2 (SB8)",
+      "description": "2024 special session congressional plan at issue in Callais.",
+      "status": "held_unconstitutional",
+      "source_ids": [
+        "leg2024",
+        "callais2026"
+      ]
+    },
+    {
+      "id": "2026-act2",
+      "name": "2026 Act 2 (SB121)",
+      "description": "Separate 2026 regular session congressional plan signed May 29, 2026. The cited Supreme Court opinion did not adjudicate SB121.",
+      "status": "enacted",
+      "source_ids": [
+        "sb121",
+        "leg2026"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "id": "callais",
+      "name": "Louisiana v. Callais",
+      "docket": "U.S. Supreme Court 24-109 and 24-110; underlying W.D. La. 3:24-cv-00122",
+      "summary": "Supreme Court affirmed the judgment against the 2024 SB8 congressional map. Later lower court procedural status requires independent docket verification.",
+      "source_ids": [
+        "callais2026",
+        "callaisdocket"
+      ]
+    },
+    {
+      "id": "legislation",
+      "name": "Legislative action",
+      "docket": null,
+      "summary": "Statutory map enactment, not a judicial decision.",
+      "source_ids": [
+        "sb121"
+      ]
+    }
+  ],
+  "events": [
+    {
+      "id": "district2024",
+      "date": "2024-04-30",
+      "title": "District court rules against 2024 SB8 map",
+      "case_id": "callais",
+      "map_id": "2024-act2",
+      "status": "court_order",
+      "summary": "Three judge federal district court found the 2024 map unconstitutional. The Supreme Court later stayed the injunction.",
+      "source_ids": [
+        "callais2026",
+        "callaisdocket"
+      ]
+    },
+    {
+      "id": "stay2024",
+      "date": "2024-05-15",
+      "title": "Supreme Court stays district court injunction",
+      "case_id": "callais",
+      "map_id": "2024-act2",
+      "status": "stay",
+      "summary": "The stay affected enforcement of the district court injunction while review proceeded. A stay is not a merits reversal.",
+      "source_ids": [
+        "callaisdocket"
+      ]
+    },
+    {
+      "id": "sc2026",
+      "date": "2026-04-29",
+      "title": "Supreme Court affirms ruling against 2024 map",
+      "case_id": "callais",
+      "map_id": "2024-act2",
+      "status": "court_decision",
+      "summary": "The Court affirmed and remanded the ruling that SB8 was an unconstitutional racial gerrymander. The holding is about SB8, not the later SB121 map.",
+      "source_ids": [
+        "callais2026",
+        "callaisdocket"
+      ]
+    },
+    {
+      "id": "act2026",
+      "date": "2026-05-29",
+      "title": "Governor signs SB121 as 2026 Act 2",
+      "case_id": "legislation",
+      "map_id": "2026-act2",
+      "status": "legislative_action",
+      "summary": "Louisiana enacted a distinct congressional plan. Any challenge to this plan must be documented with its own docket and order.",
+      "source_ids": [
+        "sb121",
+        "leg2026"
+      ]
+    }
+  ]
+}
